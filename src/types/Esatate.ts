@@ -1,0 +1,26 @@
+export type Estate = {
+    id:number,
+    title:string,
+    address:string,
+    owner_phone:string,
+    description:string,
+    price:number,
+    months:number,
+    area:number,
+    type:number,
+    currencyId:number,
+    userId:number,
+    categoryId:number,
+    createdAt:string,
+    updatedAt:string,
+    user?:{
+        name:string
+    },
+    currency:{
+        title:string
+    },
+    category?:{
+        title:string
+    },
+    images:{path:string}[]
+}
